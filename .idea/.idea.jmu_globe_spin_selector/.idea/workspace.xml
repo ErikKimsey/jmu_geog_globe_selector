@@ -101,7 +101,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="rider.run.widget.enabled.cache" value="false" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -176,7 +176,7 @@
       <workItem from="1647955409045" duration="3883000" />
       <workItem from="1647978365610" duration="3123000" />
       <workItem from="1647993056247" duration="393000" />
-      <workItem from="1647993558259" duration="2163000" />
+      <workItem from="1647993558259" duration="2729000" />
     </task>
     <servers />
   </component>
