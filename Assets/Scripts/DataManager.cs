@@ -25,11 +25,11 @@ public class DataManager : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+        _actItemsList = new List<ActivityItem>();
     }
 
     private void Start()
     {
-        _actItemsList = new List<ActivityItem>();
         dataFile = Application.streamingAssetsPath + "/activtydata.json";
     }
 
@@ -61,7 +61,8 @@ public class DataManager : MonoBehaviour
     {
         for (int i = 0; i < 10; i++)
         {
-            ActivityItem _item = new ActivityItem();
+            ActivityItem _item =
+                ScriptableObject.CreateInstance<ActivityItem>();
             _item.index = i;
             _item.itemLabel =
                 "Messenger bag chartreuse art party cred street art photo booth.";

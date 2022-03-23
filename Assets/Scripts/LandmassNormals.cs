@@ -10,8 +10,10 @@ public class LandmassNormals : MonoBehaviour
     [SerializeField] private MeshFilter m_Mesh;
     private Vector3[] m_Normals;
 
-    private void Awake()
+    private void Start()
     {
+
+        m_Normals = new Vector3[m_Mesh.mesh.normals.Length];
         m_Normals = m_Mesh.mesh.normals;
     }
 
