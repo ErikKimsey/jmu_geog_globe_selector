@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="fe359c8e-9d14-427e-b96f-30d5fe9c72bc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.jmu_globe_spin_selector/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.jmu_globe_spin_selector/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.jmu_globe_spin_selector/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.jmu_globe_spin_selector/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,7 +176,7 @@
       <workItem from="1647955409045" duration="3883000" />
       <workItem from="1647978365610" duration="3123000" />
       <workItem from="1647993056247" duration="393000" />
-      <workItem from="1647993558259" duration="2070000" />
+      <workItem from="1647993558259" duration="2163000" />
     </task>
     <servers />
   </component>
