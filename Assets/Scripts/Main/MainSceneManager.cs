@@ -13,6 +13,10 @@ public class MainSceneManager : MonoBehaviour
     private InputManager m_InputManager;
     private List<ActivityItem> m_ActivityItems;
 
+    private void Awake()
+    {
+
+    }
 
     void Start()
     {

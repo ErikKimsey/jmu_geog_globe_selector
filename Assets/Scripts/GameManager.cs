@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityTemplateProjects;
 
 public class GameManager : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class GameManager : MonoBehaviour
     private GameObject m_Canvas;
     [SerializeField] private InputDisplay m_InputDisplay;
     [SerializeField] private InputManager m_InputManager;
+    [SerializeField] private ActivityOption m_ActivityOption;
     private DataManager m_DataManager;
     public ActivityManagement m_ActivityManagement;
 
