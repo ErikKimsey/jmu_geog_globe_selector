@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private InputDisplay m_InputDisplay;
     [SerializeField] private InputManager m_InputManager;
     private DataManager m_DataManager;
+    public ActivityManagement m_ActivityManagement;
 
     public static GameManager instance;
     private void Awake()
@@ -25,6 +26,13 @@ public class GameManager : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+    }
+
+    private void Start()
+    {
+        m_ActivityManagement =
+            (ActivityManagement)ScriptableObject
+                .CreateInstance<ActivityManagement>();
     }
 
     public void AddInput()
