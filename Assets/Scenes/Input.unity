@@ -721,13 +721,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 401525072}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f59f9df36ff284962a0a8030cbbbc4f2, type: 3}
+  m_Script: {fileID: 11500000, guid: 09840c6b450ab47bbb29d056c4c9d137, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_InputDisplay: {fileID: 464193657}
   m_InputManager: {fileID: 1951895739}
-  m_ActivityOption: {fileID: 11400000, guid: f3afe7b8327874a07af0218485ca0f10, type: 2}
-  m_ActivityManagement: {fileID: 11400000, guid: f05aeeab2786644089b0bc06fa3b3936, type: 2}
+  m_ActivityOption: {fileID: 0}
+  m_ActivityManagement: {fileID: 0}
 --- !u!1 &404995105
 GameObject:
   m_ObjectHideFlags: 0

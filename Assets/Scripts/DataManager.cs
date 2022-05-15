@@ -16,15 +16,15 @@ public class DataManager : MonoBehaviour
 
     private void Awake()
     {
-        if (instance == null)
+        if (instance != null && instance != this)
         {
-            instance = this;
-            DontDestroyOnLoad(this);
+            Destroy(this);
         }
         else
         {
-            Destroy(this.gameObject);
+            instance = this;
         }
+
         _actItemsList = new List<ActivityItem>();
     }
 
@@ -43,7 +43,6 @@ public class DataManager : MonoBehaviour
             fileContents = File.ReadAllText(dataFile);
             items = JsonHelper.FromJson<ActivityItem>(fileContents);
         }
-
         return items;
     }
 

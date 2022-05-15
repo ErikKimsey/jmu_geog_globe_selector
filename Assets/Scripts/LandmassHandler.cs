@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,15 +7,15 @@ using UnityEngine;
 public class LandmassHandler : MonoBehaviour
 {
     [SerializeField] private float rotationRate;
-    private GameObject m_LandMass;
+    private Vector3 m_TransformUp;
+
     void Start()
     {
-        
+        m_TransformUp = transform.up * -1f;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        transform.RotateAround(transform.position, transform.up * -1f, Time.deltaTime * rotationRate);
+        transform.RotateAround(transform.position, m_TransformUp, Time.deltaTime * rotationRate);
     }
 }

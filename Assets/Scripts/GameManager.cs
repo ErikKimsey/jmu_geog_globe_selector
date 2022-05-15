@@ -16,18 +16,19 @@ public class GameManager : MonoBehaviour
     private DataManager m_DataManager;
     public ActivityManagement m_ActivityManagement;
 
-    public static GameManager instance;
+    public static GameManager Instance;
     private void Awake()
     {
-        if (instance == null)
-        {
-            instance = this;
-            DontDestroyOnLoad(this);
-        }
-        else
-        {
-            Destroy(this.gameObject);
-        }
+
+            if (Instance != null && Instance != this)
+            {
+                Destroy(this);
+            }
+            else
+            {
+                Instance = this;
+            }
+        
     }
 
     private void Start()
