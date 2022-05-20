@@ -9,10 +9,7 @@ public class InputManager : MonoBehaviour
 
     [Header("Drag items into these fields, yo.")]
 
-    [SerializeField] private Button addButton;
-    [SerializeField] private Button submitButton;
     [SerializeField] private InputField m_InputField;
-    [SerializeField] private InputDisplay m_InputDisplay;
     [SerializeField] private DataManager m_DataManager;
     [SerializeField] private ActivityItem m_ActivityItem;
     [SerializeField] private GameObject m_ListItemPrefab;
@@ -47,6 +44,10 @@ public class InputManager : MonoBehaviour
     public void AddInput()
     {
         ActivityItem _item = ScriptableObject.CreateInstance<ActivityItem>();
+        if (m_ItemList == null)
+        {
+            m_ItemList = new List<ActivityItem>();
+        }
         _item.itemLabel = m_InputField.text;
         _item.index = m_ItemList.Count + 1;
         m_ItemList.Add(_item);
@@ -57,7 +58,7 @@ public class InputManager : MonoBehaviour
     // Send updated list to InputDisplay
     public void UpdateDisplayedList(List<ActivityItem> list)
     {
-        m_InputDisplay.DisplayInput(list.Last());
+        DisplayInput(list.Last());
 
         // TODO:
         // 1. If no JSON file exists, create one.

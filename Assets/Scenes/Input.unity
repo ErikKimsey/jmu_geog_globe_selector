@@ -689,7 +689,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09840c6b450ab47bbb29d056c4c9d137, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InputDisplay: {fileID: 0}
   m_InputManager: {fileID: 1951895739}
   m_ActivityOption: {fileID: 11400000, guid: f3afe7b8327874a07af0218485ca0f10, type: 2}
   m_ActivityManagement: {fileID: 11400000, guid: f05aeeab2786644089b0bc06fa3b3936, type: 2}
@@ -705,7 +704,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af0259760357846f1a307167d1b3feb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Item: {fileID: 0}
+  m_Item: {fileID: 11400000, guid: ec9d509e69abf437fa64d0bf1bf47e7e, type: 2}
 --- !u!1 &404995105
 GameObject:
   m_ObjectHideFlags: 0
@@ -2784,14 +2783,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66e4cce97b35647c7acd15fd1dcf313b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  addButton: {fileID: 172635028}
-  submitButton: {fileID: 809754366}
   m_InputField: {fileID: 273322577}
-  m_InputDisplay: {fileID: 0}
-  m_DataManager: {fileID: 0}
-  m_ActivityItem: {fileID: 0}
-  m_ListItemPrefab: {fileID: 0}
-  m_Panel: {fileID: 0}
+  m_DataManager: {fileID: 401525075}
+  m_ActivityItem: {fileID: 11400000, guid: ec9d509e69abf437fa64d0bf1bf47e7e, type: 2}
+  m_ListItemPrefab: {fileID: 646415743798841508, guid: f47b927f12dc94645af97d0dc569c7de, type: 3}
+  m_Panel: {fileID: 446386843}
 --- !u!1 &1951895737
 GameObject:
   m_ObjectHideFlags: 0
@@ -2840,19 +2836,16 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1951895737}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 66e4cce97b35647c7acd15fd1dcf313b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  addButton: {fileID: 172635028}
-  submitButton: {fileID: 809754366}
   m_InputField: {fileID: 273322577}
-  m_InputDisplay: {fileID: 0}
-  m_DataManager: {fileID: 0}
-  m_ActivityItem: {fileID: 11400000, guid: ec9d509e69abf437fa64d0bf1bf47e7e, type: 2}
-  m_ListItemPrefab: {fileID: 0}
-  m_Panel: {fileID: 0}
+  m_DataManager: {fileID: 401525075}
+  m_ActivityItem: {fileID: 0}
+  m_ListItemPrefab: {fileID: 646415743798841508, guid: f47b927f12dc94645af97d0dc569c7de, type: 3}
+  m_Panel: {fileID: 446386843}
 --- !u!1 &2020159429
 GameObject:
   m_ObjectHideFlags: 0

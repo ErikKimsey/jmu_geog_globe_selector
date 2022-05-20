@@ -50,6 +50,8 @@ public class DataManager : MonoBehaviour
         if (list.Count > 0)
         {
             var jsonString = JsonHelper.ToJson(list);
+            Debug.Log("jsonString");
+            Debug.Log(jsonString);
             File.WriteAllText(dataFile, jsonString);
         }
     }

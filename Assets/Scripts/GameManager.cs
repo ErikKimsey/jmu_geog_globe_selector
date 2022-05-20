@@ -31,8 +31,6 @@ public class GameManager : MonoBehaviour
         m_ActivityManagement =
             (ActivityManagement)ScriptableObject
                 .CreateInstance<ActivityManagement>();
-        Debug.Log("Application.persistentDataPath");
-        Debug.Log(Application.persistentDataPath);
     }
 
     public void AddInput()
