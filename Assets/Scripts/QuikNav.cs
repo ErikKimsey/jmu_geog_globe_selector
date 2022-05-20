@@ -1,12 +1,4 @@
-using System;
-using System.Collections;
 using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.SceneManagement;
-using System.Collections.Generic;
-using System.Linq;
-using TMPro;
-using UnityEditor.EditorTools;
 
 public class QuikNav : MonoBehaviour
 {

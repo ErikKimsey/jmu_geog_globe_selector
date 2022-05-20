@@ -1,8 +1,6 @@
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using UnityTemplateProjects;
 
 [CreateAssetMenu(fileName = "ActivityManagement", menuName = "ActivityManagement", order = 0)]
 public class ActivityManagement : ScriptableObject

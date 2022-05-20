@@ -1,8 +1,5 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Rendering;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 
@@ -18,12 +15,6 @@ public class LandingSceneManager : MonoBehaviour
         
     }
 
-
-    void Update()
-    {
-        
-    }
-
     IEnumerator FadeScene()
     {
         float _currTime = 0f;
@@ -31,7 +22,7 @@ public class LandingSceneManager : MonoBehaviour
         while (_currTime < m_FadeDuration)
         {
             _alpha = Mathf.Lerp(0f, 1, _currTime / m_FadeDuration);
-            m_
+            // m_
             _currTime += Time.deltaTime;
             yield return null;
         }
@@ -39,12 +30,12 @@ public class LandingSceneManager : MonoBehaviour
 
     IEnumerator NavigateTo()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene(1);
         yield return new WaitForSeconds(1f);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(1);
     }
 
     public void NavigateToInputScene()
     {
-
+        StartCoroutine(NavigateTo());
     }
 }

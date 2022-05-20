@@ -1,10 +1,5 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-using UnityTemplateProjects;
 
 public class GameManager : MonoBehaviour
 {
@@ -59,7 +54,7 @@ public class GameManager : MonoBehaviour
                 GameObject.Find("EventSystem").SetActive(false);
             }
 
-            UnityEngine.SceneManagement.SceneManager.LoadScene(1);
+            UnityEngine.SceneManagement.SceneManager.LoadScene(2);
         }
     }
 

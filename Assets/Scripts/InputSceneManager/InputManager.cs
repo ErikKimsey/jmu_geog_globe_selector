@@ -1,12 +1,7 @@
-using System;
-using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 using System.Linq;
-using TMPro;
-using UnityEditor.EditorTools;
 
 [ExecuteInEditMode]
 public class InputManager : MonoBehaviour
@@ -14,7 +9,7 @@ public class InputManager : MonoBehaviour
     [SerializeField] private Button addButton;
     [SerializeField] private Button submitButton;
     [SerializeField] private InputField m_InputField;
-    [SerializeField] InputDisplay m_InputDisplay;
+    [SerializeField] private InputDisplay m_InputDisplay;
     [SerializeField] private DataManager m_DataManager;
     [SerializeField] private ActivityItem m_ActivityItem;
 
