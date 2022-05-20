@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class InputDisplay : MonoBehaviour
 {
-    private string inputText;
+    // private string inputText;
     private Text displayedInput;
     [SerializeField] private GameObject m_ListItemPrefab;
     [SerializeField] private GameObject m_Panel;

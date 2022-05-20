@@ -32,7 +32,6 @@ public class DataManager : MonoBehaviour
         dataFile = Application.streamingAssetsPath + "/activtydata.json";
     }
 
-
     public List<ActivityItem> ReadFile()
     {
         List<ActivityItem> items = new List<ActivityItem>();

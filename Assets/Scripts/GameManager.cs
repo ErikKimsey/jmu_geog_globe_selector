@@ -3,11 +3,11 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    private List<ActivityItem> m_ActivityItems;
-    private GameObject m_Canvas;
-    [SerializeField] private InputDisplay m_InputDisplay;
     [SerializeField] private InputManager m_InputManager;
     [SerializeField] private ActivityOption m_ActivityOption;
+
+    private List<ActivityItem> m_ActivityItems;
+    private GameObject m_Canvas;
     private DataManager m_DataManager;
     public ActivityManagement m_ActivityManagement;
 
@@ -31,6 +31,8 @@ public class GameManager : MonoBehaviour
         m_ActivityManagement =
             (ActivityManagement)ScriptableObject
                 .CreateInstance<ActivityManagement>();
+        Debug.Log("Application.persistentDataPath");
+        Debug.Log(Application.persistentDataPath);
     }
 
     public void AddInput()

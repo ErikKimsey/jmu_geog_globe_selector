@@ -1,18 +1,22 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
 using System.Linq;
 
-[ExecuteInEditMode]
 public class InputManager : MonoBehaviour
 {
+
+    [Header("Drag items into these fields, yo.")]
+
     [SerializeField] private Button addButton;
     [SerializeField] private Button submitButton;
     [SerializeField] private InputField m_InputField;
     [SerializeField] private InputDisplay m_InputDisplay;
     [SerializeField] private DataManager m_DataManager;
     [SerializeField] private ActivityItem m_ActivityItem;
-
+    [SerializeField] private GameObject m_ListItemPrefab;
+    [SerializeField] private GameObject m_Panel;
 
     private List<ActivityItem> m_ItemList;
     private int m_CurrIndex = 0;
@@ -20,6 +24,19 @@ public class InputManager : MonoBehaviour
     private void Start()
     {
         m_ItemList = new List<ActivityItem>();
+    }
+
+    public void DisplayInput(ActivityItem n)
+    {
+        if (String.IsNullOrEmpty(n.itemLabel) == false &&
+            m_ListItemPrefab != null)
+        {
+            // 1. instantiate ListItem PREFAB
+            GameObject _clone = Instantiate(m_ListItemPrefab, m_Panel.transform);
+
+            // 2. add item text to ListItem.text
+            _clone.GetComponent<InputItem>().SetInput(n.itemLabel);
+        }
     }
 
     public List<ActivityItem> GetItemList()
